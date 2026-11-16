@@ -21,7 +21,6 @@ CREATE TABLE conta_poupanca (
     id_usuario INT NOT NULL UNIQUE,
     numero_conta VARCHAR(10) NOT NULL UNIQUE,
     saldo DECIMAL(12,2) NOT NULL DEFAULT 0.00,
-    data_criacao DATETIME DEFAULT CURRENT_TIMESTAMP,
     
     CONSTRAINT fk_conta_usuario
         FOREIGN KEY (id_usuario)
