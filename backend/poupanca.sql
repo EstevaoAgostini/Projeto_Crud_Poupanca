@@ -19,7 +19,7 @@ CREATE TABLE usuario (
 CREATE TABLE conta_poupanca (
     id_conta INT AUTO_INCREMENT PRIMARY KEY,
     id_usuario INT NOT NULL UNIQUE,
-    numero_conta VARCHAR(20) NOT NULL UNIQUE,
+    numero_conta VARCHAR(10) NOT NULL UNIQUE,
     saldo DECIMAL(12,2) NOT NULL DEFAULT 0.00,
     data_criacao DATETIME DEFAULT CURRENT_TIMESTAMP,
     
